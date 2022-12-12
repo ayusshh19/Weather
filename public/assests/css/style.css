@@ -1,0 +1,239 @@
+:root{
+    --bgcolor:#40407a;
+    --textcolor:#fff;
+    --headercolor:#ff793f;
+    --iconcolor:#45aaf2;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR  */
+.navbar{
+    background-color: var(--bgcolor);
+}
+.navbar .nav-link{
+    color: var(--textcolor);
+}
+.navbar .navbar-brand{
+    color: #ff793f;
+    font-weight: bolder;
+}
+.navbar i{
+    color: var(--iconcolor);
+    animation: iconrotate 2s linear infinite;
+}
+@keyframes iconrotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* NAVBAR  */
+
+/* MAIN CONTENT  */
+
+.usercontent{
+    display: flex;
+    width: 100%;
+    height: 30rem;
+}
+.contentleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.contentleft h2{
+    color: var(--headercolor);
+}
+.contentleft p{
+    text-transform: capitalize;
+}
+.contentright{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+
+}
+.contentright img{
+    width: 30rem;
+    height: 20rem;
+}
+@media  (max-width:990px) {
+    .usercontent{
+        flex-wrap: wrap;
+    }
+    .contentleft{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .contentright{
+        width: 100%;
+    }
+    .contentright img{
+        width: 100%;
+        height: 15rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+/* MAIN CONTENT  */
+
+/* FOOTER */
+
+.footercontent{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bgcolor);
+    width: 100%;
+    padding: 1rem;
+}
+.footercontent h5{
+    color: var(--textcolor);
+    text-align: center;
+    
+}
+
+/* FOOTER  */
+
+/* ABOUT */
+
+figure img{
+ filter: drop-shadow(0 0.5rem 1rem black);
+}
+.aboutcontent{
+    display: flex;
+
+}
+@media (max-width:990px) {
+    .aboutcontent{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutleft img{
+        width: 100%;
+    }
+    .aboutleft{
+        width: 100%;
+    }
+    .aboutright{
+        width: 100%;
+    }
+}
+.aboutcontent .aboutright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutright h2{
+    color: var(--headercolor);
+}
+.aboutcontent i{
+    color: var(--iconcolor);
+    animation: abouticon 2s linear infinite alternate;
+}
+.aboutright p{
+    text-transform: capitalize ;
+}
+@keyframes abouticon {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+/* ABOUT  */
+
+/* 404 ERROR PAGE  */
+
+.error404content{
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+.error404content img{
+width: 40rem;
+height: 40rem;
+}
+
+@media  (max-width:990px) {
+    .error404content img{
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+/* 404 ERROR PAGE  */
+
+/* Weather page  */
+.infocontent{
+    display: flex;
+    flex-direction: column;
+}
+.maininfomation form{
+    width: 50rem ;
+    background-color: var(--bgcolor);
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:990px) {
+    .maininfomation form{
+        width: 100%;
+    }
+}
+.maininfomation button{
+    margin: 1rem 0;
+    color: var(--headercolor);
+    text-align: center;
+
+}
+.maininfomation{
+    width: 100%;
+    margin-top: 2rem;
+
+}
+.infodisplay{
+    width:20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgcolor);
+    padding: 3rem;
+    color: white;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+.toplayer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--headercolor);
+    padding: 0.4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+.middledata{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+.lower{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+/* Weather page  */
